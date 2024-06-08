@@ -1,0 +1,54 @@
+.imgContainer{
+    width: 60%;
+    height: 10%;
+    max-width: 350px;
+    max-height: 100px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 15px;
+    background-color: var(--active-color);
+    border: 2px dashed transparent;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.imgContainer.dark{
+    background-color: var(--form-darkMode-color);
+}
+  
+.imgContainer svg{
+   color: var(--font-color);
+   font-size: 2rem;
+   color: #fff;
+}
+
+.imgContainer span{
+    color: var(--font-color);
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+.imgContainer.dragOn{
+    width: 60%;
+    height: 60%;
+    background-color: transparent !important;
+    border: 2px dashed var(--active-color) !important;
+    transition: .4s;
+}
+
+.dragOn svg, .dragOn span{
+    color: var(--active-color);
+}
+
+.boxDrop{
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    position: absolute;
+    cursor: pointer;
+}

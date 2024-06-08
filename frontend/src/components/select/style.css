@@ -1,0 +1,5 @@
+.selection{
+    border-radius: 13px;
+    padding: 5px 15px;
+    border: 2px solid var(--active-color);
+}
