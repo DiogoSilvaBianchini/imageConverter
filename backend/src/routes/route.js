@@ -17,7 +17,7 @@ const router = express.Router()
 router.use(morgan("dev"))
 
 router.use(cors({
-    origin: "http://localhost:5173"
+    origin: "http://localhost:8081"
 }))
 
 router.get("/", (req,res) => res.status(200).json({results: "Hello World", status: 200}))

@@ -13,10 +13,6 @@ function App() {
   const [data, setData] = useState(null)
 
   useEffect(() => {
-    console.log(listImageBase64)
-  }, [listImageBase64])
-
-  useEffect(() => {
     if(listImageBase64){
       const urlImage = []
 
